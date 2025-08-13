@@ -1,0 +1,107 @@
+body {
+  background: cornflowerblue;
+  font-family: 'Orbitron',sans-serift;
+  text-align: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+@keyframes faldIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
+
+.background {
+  box-shadow: 0 0 10px rgba(0,0,0.10);
+  background-color: rgba(0,0,0,0.20);
+  padding: 60px;
+  border-radius: 10px;
+  margin: 30px;
+  animation: masukKiri 1s ease-out forwards;
+}
+
+.logo img {
+  border: 3px solid Aqua;
+  border-radius: 50%;
+  box-shadow: 2px 2px 50px #00ffff;
+}
+
+.logo h1 {
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+.logo p {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px #00ffff;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.btn p {
+  font-weight: bold;
+  color: black;
+  font-size: 10px;
+  margin: 5px;
+}
+
+.btn button {
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+  border: 2px solid black;
+  padding: 10px;
+  margin: 5px;
+  width: 250px;
+  border-radius: 10px;
+  color: white;
+  transform: all 0.3s ease-in-out;
+  font-family: 'Orbitron', Sans-Serift;
+  background-color: cornflowerblue;
+}
+
+.btn a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.btn button:hover {
+  background-color: #00ffff;
+  color: #000;
+  box-shadow: 0 0 50px #00ffff;
+  transform: scale(1.05);
+}
+
+.dev h1 {
+  color: white;
+  font-size: 10px;
+  text-shadow: 0 0 10px rgba(0, 0, 0.10);
+}
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+@keyframes masukKiri {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
